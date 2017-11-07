@@ -1,11 +1,11 @@
 ### Parliment Data Set
 
-- For top ten parties compute the following metrics
+- For top ten parties compute the following metrics for the year 2009
   - Total number of contestants
   - Total of number of winning seats
   - Avg. %of votes
   
-- Identify top ten candidates with highest %margin of votes
+- Identify top ten candidates with highest %margin of votes for the year 2009
 - Identify year wise percentage of male and female candidates?
 
 
