@@ -30,4 +30,11 @@
   - Y axis contains number of likes
   - Color represents device from which it was tweeted
 - Create a heat map or tile plot to visualize number of tweets by day of month and month of the year 
-### Tweets(#flipkart)
+### Bank Campaign data set
+- Identify unique job categories
+- Identify min, max, median based on balance column and also plot a box plot to see if there are any outliers
+- Create a new column based on Balance column. The values in new column should be "group-1" if balance is more than 15000 else "group-2"
+- Identify the percentage of students who are targetted for campaign
+- Using apply function create a new column called "response_numeric". In which values should be 0 if y is "no" and values should be 1 if y is "yes"
+- Compute average response by each job category
+- Create pivot table in which rows represents job category, columns represents marital status and values represents total number of campaigns
