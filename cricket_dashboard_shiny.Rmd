@@ -6,15 +6,26 @@ output:
     orientation: rows
 ---
 
+```{r}
+library(dplyr)
+library(ggplot2)
+odi = read.csv('e:/datasets/odi-batting.csv')
+odi$MatchDate = as.Date(odi$MatchDate, format="%m-%d-%Y")
+odi$year = format(odi$MatchDate, "%Y")
+uniq_years = sort(unique(as.numeric(odi$year)))
+uniq_countries = unique(odi$Country)
+```
+
+
 Sidebar {.sidebar}
 ====================================
 ```{r}
-textInput(inputId = "text_name", label="Enter some text here")
 selectInput(inputId = "select_country", label = "Select a country",
-            choices = c('India', 'Pakistan', 'Australia'))
-dateInput(inputId = "start_date", label="Select Starting Date")
-sliderInput(inputId = "select_bin", label="Select a bin",
-            min=0,  max=10, value=5)
+            choices = uniq_countries)
+#selectInput(inputId = "select_year", label="Select a Year",
+#            choices = uniq_years)
+sliderInput(inputId = "slide_year", label="Select a Year",
+            min=min(uniq_years), max=max(uniq_years), value=max(uniq_years))
 ```
 
 Dashboard 
@@ -26,27 +37,17 @@ Row
 ### Output
 
 ```{r}
-renderText({input$text_name})
+renderPlot({
+  odi %>% filter(Country == input$select_country, year==input$slide_year) %>% group_by(Player) %>% summarise(Runs=sum(Runs, na.rm = T)) %>% arrange(-Runs) %>% head(5) %>% ggplot(aes(x=reorder(Player, -Runs), y=Runs)) + geom_bar(stat='identity')
+})
 ```
 
-### Output 2 {.text}
-
-```{r}
-renderText({input$select_country})
-```
-
-
-### Output 2 {.text}
-
-```{r}
-renderText({input$select_country})
-```
 
 Row
 ------------------
 ### Output 3
 ```{r}
-renderText({input$select_bin})
+#renderText({input$select_bin})
 ```
 
 ### Date output
