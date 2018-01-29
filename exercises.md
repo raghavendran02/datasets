@@ -18,8 +18,14 @@
   - Total centuries
   - Total Fifties
   - Total Ducks
-  - Total experience in terms of number of years they have played
-  
+  - Total experience in terms of number of years they have played
+- Calculate total number of runs scored by each player. The output should be a dictionary. The player names should be the keys and total runs should be values
+- Convert Match Date column to datetime column and compute the following new columns
+    - Year, month
+- Identify in which year sachin has played most number of matches
+- Identify in which year sachin has scored most  number of runs
+- Identify in which year sachin has scored most number of centuries
+
 ### Tweets (#narendramodi)
 - Monthwise total number of tweets in a bar chart
 - Create a new column for `quarter` and compute quarter wise total number of tweets from each quarter
