@@ -1,0 +1,15 @@
+{
+  "name":"lokesh",
+  "class":"A",
+  "batch":4,
+  "active":true,
+  "role":"student"
+},
+{
+  "name":"kathir",
+  "class":"A",
+  "batch":4,
+  "active":true,
+  "role":"instructor"
+},
+
