@@ -1,0 +1,24 @@
+[
+    {
+      "name":"lokesh",
+      "class":"A",
+      "batch":4,
+      "active":true,
+      "role":"student",
+      "technologies": {
+        "name":"r",
+        "experience":5
+      }
+    },
+  {
+    "name":"kathir",
+    "class":"A",
+    "batch":4,
+    "active":true,
+    "role":"instructor",
+    "technologies": {
+      "name":"r",
+      "experience":5
+    }
+  }
+]
