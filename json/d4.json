@@ -17,8 +17,8 @@
     "active":true,
     "role":"instructor",
     "technologies": {
-      "name":"r",
-      "experience":5
+      "name":"python",
+      "experience":3
     }
   }
 ]
