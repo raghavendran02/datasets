@@ -1,0 +1,16 @@
+Date,Customer,Product,Amount
+Day1,C1,A,10
+Day1,,B,20
+Day1,,C,31
+Day1,,D,50
+Day1,,E,60
+Day1,,F,71
+Day1,C2,A,10
+Day1,,B,20
+Day1,,Z,60
+Day2,C3,D,50
+Day2,,E,60
+Day2,,F,71
+Day2,C2,F,71
+Day2,,A,10
+Day2,,E,60
