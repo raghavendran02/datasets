@@ -1,0 +1,1 @@
+sqlldr CONTROL=part-00000.ctl   skip=0   
